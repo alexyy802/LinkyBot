@@ -1,5 +1,5 @@
 # LinkyBot
-Linky bot, A open-source discord bot that allows you to add links to ur website, youtube url, etc for the people all around discord to see!
+Linky bot, An open-source discord bot that allows you to add links to ur website, youtube url, etc for the people all around discord to see!
 
 # About
 Linky bot is an open-source discord bot project that allows you to add links to our website url into the bot for people all around discord to see and visit!
