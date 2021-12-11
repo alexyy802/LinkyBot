@@ -136,12 +136,13 @@ async def on_message(message):
     if message.guild.id in emojiServers:
         is_emojiServer = True
         msg = remprefix(msg)
-        elif msg == 'emojis':
+        if msg == 'emojis':
             await reply('**List of emojis:**')
             for emoji in message.guild.emojis:
                 await sendmsg(f'{emoji} - {emoji.id}')
                 await sendmsg(f'\{emoji}')
                 await sendmsg('`-------`')
+            return
      
     # if author is bot itself
     if author == client.user: return
@@ -176,9 +177,7 @@ Coded in `Python` using the `nextcord` library.
         
         ### type commands above this line ###
         #############################
-        else:
-            if is_emojiServer and msg == 'emojis': return
-            else: await reply(f'**Command `{p}{msg}` not found!**')
+        else: await reply(f'**Command `{p}{msg}` not found!**')
     
     if msg == cum or msg == cum2:
         cServ = await client.fetch_guild(919110751103361084)
